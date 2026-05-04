@@ -6,7 +6,7 @@ if __name__ == "__main__":
 
     while True:
         try:
-            operation = input("Enter operation: ")
+            operation = input("Enter operation (Addition, Subtraction, Multiplication, Division, Modulo, Floor Division, Square Root): ")
             if operation == "Square Root":
                 number = int(input("Enter number: "))
                 result = calculator.square_root(number)
@@ -22,13 +22,13 @@ if __name__ == "__main__":
                     result = calculator.multiply(first_number, second_number)
                 elif operation == "Division":
                     result = calculator.divide(first_number, second_number)
-                elif operation == "Modulos":
-                    result = calculator.modulus(first_number, second_number)
+                elif operation == "Modulo":
+                    result = calculator.modulo(first_number, second_number)
                 elif operation == "Floor Division":
                     result = calculator.floor_division(first_number, second_number)
 
             print(f"Result: {result}")
         except ValueError:
             print("Invalid input")
-        if input("Continue? (Y/N): ").lower() == "N":
+        if input("Continue? (Y/N): ").lower() != "y":
             break
