@@ -14,3 +14,9 @@ class Calculator:
         return first_number ** second_number
     def modulos(self, first_number, second_number):
         return first_number % second_number
+    def floor_division(self, first_number, second_number):
+        return first_number // second_number
+    def square_root(self, first_number):
+        if number >= 0:
+            return math.sqrt(first_number)
+        return first_number ** 0.5
