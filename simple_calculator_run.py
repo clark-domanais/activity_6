@@ -1,6 +1,6 @@
 import simple_calculator
 
-def main():
+if __name__ == "__main__":
     calculator = simple_calculator.Calculator()
     print("Not so Simple Calculator(Maangas)")
 
@@ -30,7 +30,3 @@ def main():
             print(f"Result: {result}")
         except ValueError:
             print("Invalid input")
-
-
-if __name__ == "__main__":
-    main()
