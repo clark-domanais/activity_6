@@ -8,11 +8,11 @@ if __name__ == "__main__":
         try:
             operation = input("Enter operation: ")
             if operation == "Square Root":
-                number = input("Enter number: ")
+                number = int(input("Enter number: "))
                 result = calculator.square_root(number)
             else:
-                first_number = input("Enter first number: ")
-                second_number = input("Enter second number: ")
+                first_number = int(input("Enter first number: "))
+                second_number = int(input("Enter second number: "))
 
                 if operation == "Addition":
                     result = calculator.add(first_number, second_number)
@@ -30,3 +30,5 @@ if __name__ == "__main__":
             print(f"Result: {result}")
         except ValueError:
             print("Invalid input")
+        if input("Continue? (Y/N): ").lower() == "N":
+            break
