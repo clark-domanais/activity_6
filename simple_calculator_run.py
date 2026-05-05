@@ -27,11 +27,11 @@ if __name__ == "__main__":
                 elif operation == "//":
                     result = calculator.floor_division(first_number, second_number)
                 else:
-                    print("Invalid operation")
+                    raise ValueError("Invalid operation")
 
             print(f"Result: {result}")
 
-        except ValueError:
-            print("Invalid input")
+        except ValueError as e:
+            print(e)
         if input("Continue? (Y/N): ").lower() != "y":
             break
